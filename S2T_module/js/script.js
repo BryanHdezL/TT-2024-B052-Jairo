@@ -10,6 +10,7 @@ toggle_button.addEventListener('click', function() {
         window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
         recognition = new SpeechRecognition();
+        recognition.lang = "es-MX";
         recognition.interimResults = true;
         recognition.continuous = true; // Mantener la escucha activa indefinidamente
 
